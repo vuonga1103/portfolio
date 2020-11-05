@@ -13,6 +13,9 @@ import MenuIcon from "@material-ui/icons/Menu";
 import { makeStyles } from "@material-ui/core/styles";
 import { Link as RouterLink } from "react-router-dom";
 import { LabelImportantOutlined } from "@material-ui/icons";
+import constants from "../../constants";
+
+const { orange, purple } = constants;
 
 const useStyles = makeStyles({
   appBar: {
@@ -31,10 +34,9 @@ const useStyles = makeStyles({
     fontSize: 16,
     fontWeight: 500,
     "&:hover": {
-      color: "#e69456",
+      color: orange,
     },
   },
-
   toolBarDesktop: {
     display: "flex",
     justifyContent: "space-between",
@@ -48,12 +50,12 @@ const useStyles = makeStyles({
     textTransform: "uppercase",
     fontWeight: 500,
     height: "100%",
-    backgroundImage: "linear-gradient(#3f254a, black)",
+    backgroundImage: `linear-gradient(${purple}, black)`,
     color: "white",
   },
   drawerChoice: {
     "&:hover": {
-      color: "#e69456",
+      color: orange,
     },
   },
 });
@@ -194,7 +196,7 @@ export default function NavBar() {
   };
 
   return (
-    <AppBar className={appBar}>
+    <AppBar className={appBar} position="static">
       {mobileView ? displayMobile() : displayDesktop()}
     </AppBar>
   );

@@ -8,26 +8,8 @@ import WritingsPage from "./components/WritingsPage/WritingsPage";
 import ContactPage from "./components/ContactPage/ContactPage";
 import Footer from "./components/Footer/Footer";
 import NotFoundPage from "./components/NotFoundPage/NotFoundPage";
-import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
-
-const theme = createMuiTheme({
-  typography: {
-    // customizing h2 size
-    // h2: {
-    //   fontSize: 36,
-    //   marginBottom: 15,
-    // },
-  },
-  // defining palette for primary color
-  palette: {
-    primary: {
-      main: "#e69456",
-    },
-    secondary: {
-      main: "#a77898",
-    },
-  },
-});
+import { ThemeProvider } from "@material-ui/core/styles";
+import theme from "./theme";
 
 function App() {
   return (
