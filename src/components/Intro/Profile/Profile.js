@@ -39,7 +39,7 @@ const useStyles = makeStyles({
   },
   rolesContainer: {
     height: 30,
-    marginBottom: 20,
+    // marginBottom: 20,
     "@media (max-width: 799px)": {
       marginBottom: 0,
     },
@@ -58,7 +58,7 @@ const useStyles = makeStyles({
     color: orange,
   },
   profilePhotoContainer: {
-    marginTop: 25,
+    marginTop: 50,
   },
 });
 
@@ -109,7 +109,7 @@ export default function Profile() {
               {...{
                 interval: 1500,
                 springConfig: { stiffness: 180, damping: 15 },
-                children: ["lifelong learner.", "web developer.", "therapist."],
+                children: ["web developer.", "therapist.", "lifelong learner."],
                 className: rolesLoop,
               }}
             />{" "}

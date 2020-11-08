@@ -7,7 +7,7 @@ const { orange } = constants;
 const useStyles = makeStyles({
   container: {
     textAlign: "center",
-    marginTop: 30,
+    marginTop: 50,
     marginBottom: 50,
   },
   quote: {

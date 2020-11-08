@@ -198,7 +198,7 @@ export default function NavBar() {
   };
 
   return (
-    <AppBar className={appBar} position="static">
+    <AppBar {...{ className: appBar, position: "static", elevation: 0 }}>
       {mobileView ? displayMobile() : displayDesktop()}
     </AppBar>
   );

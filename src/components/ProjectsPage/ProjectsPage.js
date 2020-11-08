@@ -1,43 +1,65 @@
 import React from "react";
 import Typing from "react-typing-animation";
 import constants from "../../constants";
-import { makeStyles, Typography } from "@material-ui/core";
-
-import "./ProjectsPage.css";
+import { Grid, makeStyles, Typography } from "@material-ui/core";
 import projectsData from "./projectsData";
-import Project from "./Project/ProjectCarousel/ProjectCarousel";
+import ProjectInfo from "./ProjectInfo/ProjectInfo";
+import Project from "./Project/Project";
 
-const { orange } = constants;
+const { orange, montserratFont } = constants;
 
 const useStyles = makeStyles({
-  title: {
-    marginTop: 30,
+  container: {
+    marginTop: 50,
     textAlign: "center",
+    marginBottom: 20,
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  },
+  title: {
     marginBottom: 30,
-    // fontSize: 30,
+    fontSize: 45,
+    fontWeight: "bold",
+    fontFamily: montserratFont,
+    "@media (max-width: 799px)": {
+      fontSize: 30,
+    },
   },
   cursor: {
     color: orange,
   },
+  titleContainer: {
+    height: 70,
+    "@media (max-width: 799px)": {
+      height: 50,
+    },
+  },
 });
 
 export default function ProjectsPage() {
-  const { cursor, title } = useStyles();
+  const { cursor, title, container, titleContainer } = useStyles();
 
   const displayProjects = () => {
-    return projectsData.map((p) => <Project key={p.name} project={p} />);
+    return projectsData.map((p) => (
+      <Grid item xs={11} sm={8} md={6}>
+        <ProjectInfo key={p.name} project={p} />
+        <Project key={p.name} project={p} />
+      </Grid>
+    ));
   };
 
   return (
-    <div>
-      <Typography variant="h4" component="h1">
+    <div className={container}>
+      <Typography
+        {...{ variant: "h4", component: "h1", className: titleContainer }}
+      >
         <Typing speed={30} cursorClassName={cursor}>
           <div className={title}>
-            <div>my projects</div>
+            <div>My Projects</div>
           </div>
         </Typing>
       </Typography>
-
       {displayProjects()}
     </div>
   );

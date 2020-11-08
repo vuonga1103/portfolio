@@ -1,0 +1,54 @@
+.carousel .thumb.selected,
+.carousel .thumb:hover {
+  border: 3px solid #fff;
+}
+
+.carousel .thumb {
+  border: 3px solid #333;
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.carousel.carousel-slider .control-arrow {
+  top: 0;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  margin-top: 0;
+  padding: 5px;
+  width: 50px;
+}
+
+.carousel .carousel-status {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 25px;
+  font-size: 16px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+  color: #fff;
+}
+
+/* .carousel .slide .legend {
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -45%;
+  width: 90%;
+  border-radius: 10px;
+  background: #e69456;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  opacity: 0.25;
+  transition: opacity 0.35s ease-in-out;
+}
+
+.carousel:hover .slide .legend {
+  opacity: 0.9;
+} */
