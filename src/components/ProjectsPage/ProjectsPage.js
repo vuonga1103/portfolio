@@ -5,40 +5,16 @@ import { Grid, makeStyles, Typography } from "@material-ui/core";
 import projectsData from "./projectsData";
 import ProjectInfo from "./ProjectInfo/ProjectInfo";
 import Project from "./Project/Project";
+import AnimatedHeader from "../AnimatedHeader/AnimatedHeader";
 
-const { orange, montserratFont } = constants;
+const { orange, heading, container } = constants;
 
 const useStyles = makeStyles({
-  container: {
-    marginTop: 50,
-    textAlign: "center",
-    marginBottom: 20,
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-  },
-  title: {
-    marginBottom: 30,
-    fontSize: 45,
-    fontWeight: "bold",
-    fontFamily: montserratFont,
-    "@media (max-width: 799px)": {
-      fontSize: 30,
-    },
-  },
-  cursor: {
-    color: orange,
-  },
-  titleContainer: {
-    height: 70,
-    "@media (max-width: 799px)": {
-      height: 50,
-    },
-  },
+  container,
 });
 
 export default function ProjectsPage() {
-  const { cursor, title, container, titleContainer } = useStyles();
+  const { container } = useStyles();
 
   const displayProjects = () => {
     return projectsData.map((p) => (
@@ -51,15 +27,8 @@ export default function ProjectsPage() {
 
   return (
     <div className={container}>
-      <Typography
-        {...{ variant: "h4", component: "h1", className: titleContainer }}
-      >
-        <Typing speed={30} cursorClassName={cursor}>
-          <div className={title}>
-            <div>My Projects</div>
-          </div>
-        </Typing>
-      </Typography>
+      <AnimatedHeader name="My Projects" />
+
       {displayProjects()}
     </div>
   );
