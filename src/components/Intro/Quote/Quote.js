@@ -2,16 +2,20 @@ import { Grid, makeStyles } from "@material-ui/core";
 import React from "react";
 import constants from "../../../constants";
 
-const { orange, purple } = constants;
+const { orange } = constants;
 
 const useStyles = makeStyles({
   container: {
     textAlign: "center",
-    marginTop: 20,
+    marginTop: 30,
+    marginBottom: 50,
   },
   quote: {
     fontSize: 18,
     textAlign: "center",
+    "@media (max-width: 799px)": {
+      fontSize: 16,
+    },
   },
   author: {
     fontSize: 20,
@@ -28,10 +32,10 @@ export default function Quote() {
       <Grid item xs={1} sm={2} md={3} />
       <Grid item xs={10} sm={8} md={6}>
         <div className={quote}>
-          "Even if I knew that tomorrow the world would to to pieces, I would
-          still plant my apple tree."
+          "Even if I knew that tomorrow the world would go to pieces, <br />I
+          would still plant my apple tree."
         </div>
-        <div className={author}>Martin Luther</div>
+        <div className={author}>- Martin Luther</div>
       </Grid>
       <Grid item xs={1} sm={2} md={3} />
     </Grid>

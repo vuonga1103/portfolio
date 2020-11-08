@@ -25,7 +25,7 @@ export default function Project({ project }) {
   return (
     <div
       style={{
-        minWidth: 300,
+        minWidth: 250,
         maxWidth: 500,
         marginLeft: "auto",
         marginRight: "auto",

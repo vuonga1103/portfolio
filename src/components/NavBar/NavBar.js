@@ -12,10 +12,9 @@ import ToolBar from "@material-ui/core/Toolbar";
 import MenuIcon from "@material-ui/icons/Menu";
 import { makeStyles } from "@material-ui/core/styles";
 import { Link as RouterLink } from "react-router-dom";
-import { LabelImportantOutlined } from "@material-ui/icons";
 import constants from "../../constants";
 
-const { orange, purple } = constants;
+const { orange, purple, lobsterFont } = constants;
 
 const useStyles = makeStyles({
   appBar: {
@@ -27,7 +26,7 @@ const useStyles = makeStyles({
     },
   },
   name: {
-    fontFamily: "'Lobster', cursive",
+    fontFamily: lobsterFont,
     fontWeight: "bold",
   },
   menuButton: {
@@ -41,7 +40,9 @@ const useStyles = makeStyles({
     display: "flex",
     justifyContent: "space-between",
   },
-  toolbarMobile: {},
+  toolbarMobile: {
+    width: "1vw",
+  },
   menuDrawer: {
     marginRight: 10,
   },
@@ -92,10 +93,11 @@ export default function NavBar() {
   }, []);
 
   const menuData = [
+    { label: "Home", href: "/" },
     { label: "Bio", href: "/bio" },
     { label: "Projects", href: "/projects" },
     { label: "Writings", href: "/writings" },
-    { label: "Say Hello", href: "/contact" },
+    { label: "Contact", href: "/contact" },
   ];
 
   const displayMenuButtons = () => {
