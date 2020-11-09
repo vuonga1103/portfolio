@@ -20,6 +20,7 @@ const useStyles = makeStyles({
     maxWidth: 700,
     margin: "0 30px",
     textAlign: "justify",
+    lineHeight: 1.5,
   },
 });
 export default function BioPage() {
