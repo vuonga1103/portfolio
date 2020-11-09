@@ -18,9 +18,9 @@ export default function ProjectsPage() {
 
   const displayProjects = () => {
     return projectsData.map((p) => (
-      <Grid item xs={11} sm={8} md={6}>
-        <ProjectInfo key={p.name} project={p} />
-        <Project key={p.name} project={p} />
+      <Grid item xs={11} sm={8} md={6} key={p.name}>
+        <ProjectInfo project={p} />
+        <Project project={p} />
       </Grid>
     ));
   };

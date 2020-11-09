@@ -6,7 +6,6 @@ import BioPage from "./components/BioPage/BioPage";
 import ProjectsPage from "./components/ProjectsPage/ProjectsPage";
 import WritingsPage from "./components/WritingsPage/WritingsPage";
 import ContactPage from "./components/ContactPage/ContactPage";
-import Footer from "./components/Footer/Footer";
 import NotFoundPage from "./components/NotFoundPage/NotFoundPage";
 import { ThemeProvider } from "@material-ui/core/styles";
 import theme from "./theme";
@@ -25,8 +24,6 @@ function App() {
           <Route path="/contact" exact component={ContactPage} />
           <Route path="*" component={NotFoundPage} />
         </Switch>
-
-        <Footer />
       </div>
     </ThemeProvider>
   );

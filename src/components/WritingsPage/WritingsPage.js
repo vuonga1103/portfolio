@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React from "react";
 import constants from "../../constants";
-import { makeStyles, Typography } from "@material-ui/core";
-import Typing from "react-typing-animation";
+import { makeStyles } from "@material-ui/core";
 import AnimatedHeader from "../AnimatedHeader/AnimatedHeader";
+import WritingsContainer from "./WritingsContainer/WritingsContainer";
 
-const { mediumURL, orange, heading, container } = constants;
+const { container } = constants;
 
 const useStyles = makeStyles({
   container,
@@ -13,26 +12,11 @@ const useStyles = makeStyles({
 
 export default function WritingsPage() {
   const { container } = useStyles();
-  const [posts, setPosts] = useState([]);
-
-  useEffect(() => {
-    getPosts().then((result) => setPosts(result));
-  }, []);
-
-  async function getPosts() {
-    try {
-      const response = await axios.get(mediumURL);
-      const data = await response.data.items;
-      return data;
-    } catch (error) {
-      console.log("error", error);
-    }
-  }
 
   return (
     <div className={container}>
       <AnimatedHeader name="My Writings" />
-      {}
+      <WritingsContainer />
     </div>
   );
 }

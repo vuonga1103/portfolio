@@ -56,9 +56,12 @@ export default [
     description:
       "A social platform that facilitates communication among caregivers on the same team.",
     photos: [
-      "https://i.ibb.co/p4LkV2W/Screen-Shot-2020-11-07-at-7-10-37-PM.png",
-      "https://i.ibb.co/t2q0Dyj/Screen-Shot-2020-11-07-at-7-15-35-PM.png",
-      "https://i.ibb.co/cDR7zx5/Screen-Shot-2020-11-07-at-7-20-40-PM.png",
+      "https://i.ibb.co/HrMfCP6/Screen-Shot-2020-11-09-at-12-37-10-AM.png",
+      "https://i.ibb.co/1bCGYx6/Screen-Shot-2020-11-09-at-12-38-15-AM.png",
+      "https://i.ibb.co/0Vwv7n4/Screen-Shot-2020-11-09-at-12-38-33-AM.png",
+      "https://i.ibb.co/2gLvX5N/Screen-Shot-2020-11-09-at-12-38-41-AM.png",
+      "https://i.ibb.co/zhVtjKG/Screen-Shot-2020-11-09-at-12-38-50-AM.png",
+      "https://i.ibb.co/yYWsZSj/Screen-Shot-2020-11-09-at-12-39-00-AM.png",
     ],
     technologies: ["Javascript", "Rails", "Websocket"],
     github: "https://github.com/vuonga1103/sharecare",
