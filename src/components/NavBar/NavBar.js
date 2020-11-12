@@ -21,9 +21,6 @@ const useStyles = makeStyles({
     backgroundColor: "rgba(116, 73, 103, 0.2)",
     color: "white",
     padding: "5px 10px",
-    "@media (min-width: 799px)": {
-      padding: "0 70px",
-    },
   },
   name: {
     fontFamily: lobsterFont,

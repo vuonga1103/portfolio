@@ -19,6 +19,9 @@ export default {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+    "@media (max-width: 799px)": {
+      fontSize: 14,
+    },
   },
   mediumURL:
     "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40vuonganht",

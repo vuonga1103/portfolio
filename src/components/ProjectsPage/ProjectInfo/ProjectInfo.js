@@ -6,15 +6,19 @@ const { orange } = constants;
 
 const useStyles = makeStyles({
   container: {
-    // width: 700,
-    // textAlign: "left",
     padding: "0 10px",
     marginBottom: 10,
+    "@media (max-width: 799px)": {
+      fontSize: 13,
+    },
+  },
+  subTitle: {
+    marginTop: 3,
   },
 });
 export default function ProjectInfo({ project }) {
-  const { container } = useStyles();
-  const { name, description, github, demo } = project;
+  const { container, subTitle } = useStyles();
+  const { name, description, github, demo, technologies } = project;
   return (
     <div className={container}>
       <Typography variant="h5" align="center" style={{ color: orange }}>
@@ -27,10 +31,14 @@ export default function ProjectInfo({ project }) {
       <Link href={demo} target="_blank">
         Demo
       </Link>
-      <div>
-        {" "}
-        <span style={{}}></span>
+      <div className={subTitle}>
+        <span style={{ color: orange }}>// </span>
         {description}
+      </div>
+      <div className={subTitle}>
+        {" "}
+        <span style={{ color: orange }}>Technologies: </span>
+        {technologies.join(", ")}
       </div>
     </div>
   );

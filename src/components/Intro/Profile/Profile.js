@@ -83,7 +83,7 @@ export default function Profile() {
     <div className={container}>
       <Typing
         {...{
-          speed: 30,
+          speed: 20,
           cursorClassName: cursor,
           onFinishedTyping: handleShowRolesLoop,
         }}

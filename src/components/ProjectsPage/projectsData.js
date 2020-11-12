@@ -63,7 +63,7 @@ export default [
       "https://i.ibb.co/zhVtjKG/Screen-Shot-2020-11-09-at-12-38-50-AM.png",
       "https://i.ibb.co/yYWsZSj/Screen-Shot-2020-11-09-at-12-39-00-AM.png",
     ],
-    technologies: ["Javascript", "Rails", "Websocket"],
+    technologies: ["Javascript", "Rails", "Websocket", "CSS"],
     github: "https://github.com/vuonga1103/sharecare",
     demo: "https://youtu.be/teeuBnSKRM4",
   },
@@ -71,7 +71,7 @@ export default [
   {
     name: "Zen Pen",
     description:
-      "A mental health app that assists with stress reduction via journaling and mindfulness meditation",
+      "A mental health app that assists with stress reduction via journaling and mindfulness meditation.",
     photos: [
       "https://i.ibb.co/RPZ8jDf/Screen-Shot-2020-11-07-at-7-26-12-PM.png",
       "https://i.ibb.co/3c4R1S9/Screen-Shot-2020-11-07-at-7-26-59-PM.png",
@@ -87,25 +87,25 @@ export default [
   },
   {
     name: "Pumped",
-    description: "A simple target heart rate generator",
+    description: "A simple target heart rate generator.",
     photos: [
       "https://i.ibb.co/8BzLT6D/Screen-Shot-2020-11-07-at-7-36-41-PM.png",
       "https://i.ibb.co/y6XQY6J/Screen-Shot-2020-11-07-at-7-37-31-PM.png",
     ],
-    technologies: ["Javascript"],
+    technologies: ["Javascript", "CSS", "HTML"],
     github: "https://github.com/vuonga1103/pumped",
     demo: "https://pumped-app.herokuapp.com/",
   },
   {
     name: "Who Said It?",
-    description: 'A trivia game based on the popular TV show "The Office"',
+    description: 'A trivia game based on the popular TV show "The Office".',
     photos: [
       "https://i.ibb.co/VNf30LR/Screen-Shot-2020-11-07-at-7-40-40-PM.png",
       "https://i.ibb.co/qg2qzYf/Screen-Shot-2020-11-07-at-7-41-31-PM.png",
       "https://i.ibb.co/bR8Ywn8/Screen-Shot-2020-11-07-at-7-42-29-PM.png",
       "https://i.ibb.co/7JdQD2x/Screen-Shot-2020-11-07-at-7-43-47-PM.png",
     ],
-    technologies: ["React"],
+    technologies: ["React", "CSS", "HTML"],
     github: "https://github.com/vuonga1103",
     demo: "https://who-said-it-office.herokuapp.com/",
   },
