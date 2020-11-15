@@ -1,11 +1,11 @@
 import React from "react";
-import Typing from "react-typing-animation";
 import constants from "../../constants";
 import { Grid, makeStyles, Typography } from "@material-ui/core";
 import projectsData from "./projectsData";
 import ProjectInfo from "./ProjectInfo/ProjectInfo";
 import Project from "./Project/Project";
 import AnimatedHeader from "../AnimatedHeader/AnimatedHeader";
+import ScrollUpButton from "react-scroll-up-button";
 
 const { orange, heading, container } = constants;
 
@@ -30,6 +30,7 @@ export default function ProjectsPage() {
       <AnimatedHeader name="My Projects" />
 
       {displayProjects()}
+      <ScrollUpButton />
     </div>
   );
 }

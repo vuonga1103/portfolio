@@ -1,5 +1,18 @@
 export default [
   {
+    name: "MovieFind",
+    description:
+      "A simple movie app that allows user to search, view, and like/dislike movies.",
+    photos: [
+      "https://i.ibb.co/xGnYWQm/Screen-Shot-2020-11-15-at-5-45-48-PM.png",
+      "https://i.ibb.co/WPKM63Y/Screen-Shot-2020-11-15-at-5-47-27-PM.png",
+      "https://i.ibb.co/Ln3gsPS/Screen-Shot-2020-11-15-at-5-47-50-PM.png",
+    ],
+    technologies: ["Rails", "React", "Material UI"],
+    github: "https://github.com/vuonga1103/movie-find-front-end",
+    demo: "https://www.youtube.com/watch?v=6yIvV6Rtz44",
+  },
+  {
     name: "Access-A-Place",
     description:
       "A crowdsource application that allows users to view and review places based on accessibility.",
@@ -100,7 +113,7 @@ export default [
   },
   {
     name: "Who Said It?",
-    description: 'A trivia game based on the popular TV show "The Office".',
+    description: 'A trivia game based on the popular TV show "The Office."',
     photos: [
       "https://i.ibb.co/VNf30LR/Screen-Shot-2020-11-07-at-7-40-40-PM.png",
       "https://i.ibb.co/qg2qzYf/Screen-Shot-2020-11-07-at-7-41-31-PM.png",
