@@ -4,9 +4,9 @@ export default [
     description:
       "A simple movie app that allows user to search, view, and like/dislike movies.",
     photos: [
-      "https://i.ibb.co/xGnYWQm/Screen-Shot-2020-11-15-at-5-45-48-PM.png",
-      "https://i.ibb.co/WPKM63Y/Screen-Shot-2020-11-15-at-5-47-27-PM.png",
-      "https://i.ibb.co/Ln3gsPS/Screen-Shot-2020-11-15-at-5-47-50-PM.png",
+      "https://i.ibb.co/Twyh7Fx/Screen-Shot-2020-11-15-at-5-54-14-PM.png",
+      "https://i.ibb.co/N6C6Qz3/Screen-Shot-2020-11-15-at-5-54-44-PM.png",
+      "https://i.ibb.co/1GSwtZk/Screen-Shot-2020-11-15-at-5-54-59-PM.png",
     ],
     technologies: ["Rails", "React", "Material UI"],
     github: "https://github.com/vuonga1103/movie-find-front-end",
