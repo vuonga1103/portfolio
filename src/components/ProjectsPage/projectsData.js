@@ -37,7 +37,7 @@ export default [
       "Bulma",
     ],
     github: "https://github.com/vuonga1103/access-a-place-frontend",
-    demo: "https://youtu.be/l6LJ974UmFM",
+    demo: "https://www.youtube.com/watch?v=tyQ_Nnp3sus",
   },
 
   {
@@ -63,7 +63,7 @@ export default [
       "Semantic UI",
     ],
     github: "https://github.com/vuonga1103/equip-front-end",
-    demo: "https://www.youtube.com/watch?v=TLyb1NhYnUs&t=520s&ab_channel=AnhV",
+    demo: "https://youtu.be/82_NDlwGPWs",
   },
 
   {
@@ -80,7 +80,7 @@ export default [
     ],
     technologies: ["Javascript", "Rails", "Websocket", "CSS"],
     github: "https://github.com/vuonga1103/sharecare",
-    demo: "https://youtu.be/teeuBnSKRM4",
+    demo: "https://youtu.be/smRN9G-rqIE",
   },
 
   {
@@ -98,7 +98,7 @@ export default [
     ],
     technologies: ["Rails", "Bootstrap"],
     github: "https://github.com/PeaWarrior/ZenPen",
-    demo: "https://www.youtube.com/watch?v=Y-nI7A8kdrU",
+    demo: "https://youtu.be/2fVkiududa8",
   },
   {
     name: "Pumped",
