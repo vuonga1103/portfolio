@@ -1,5 +1,21 @@
 export default [
   {
+    name: "Afternoon Roast",
+    description:
+      "A Morning Brew-inspired content management system that allows writers to create stories, attach stories to a particular newsletter, and 'publish' the newsletter to an API.",
+    photos: [
+      "https://i.ibb.co/bQmLG8j/r1.png",
+      "https://i.ibb.co/93Ydn81/r2.png",
+      "https://i.ibb.co/YfWwyjR/r3.png",
+      "https://i.ibb.co/zGpt0Z6/r4.png",
+      "https://i.ibb.co/vsF1Jv0/r5.png",
+      "https://i.ibb.co/7bxxznq/r6.png",
+    ],
+    technologies: ["Rails", "React", "Material UI", "TinyMCE"],
+    github: "https://github.com/vuonga1103/afternoon-roast-frontend",
+    demo: "https://youtu.be/nqb_-oCB6AM",
+  },
+  {
     name: "MovieFind",
     description:
       "A simple movie app that allows user to search, view, and like/dislike movies.",
