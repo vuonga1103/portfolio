@@ -49,13 +49,7 @@ export default function BioPage() {
           people to live meaningful lives. I began to teach myself to code, then
           subsequently trained at the Flatiron School. At the Flatiron School
           and now beyond, I am putting to use my fullstack development skills to
-          bring to life{" "}
-          <Link href="/projects" style={{ color: orange }}>
-            projects
-          </Link>{" "}
-          that matter. Most recently, I am working with a small development team
-          to build Femmecubator, an upcoming platform that provides support for
-          women of color who are navigating a career in tech.
+          bring to life projects that matter. Currently, I am working as a frontend software engineer for Pulse Analytics, a software company that provides decision support tools for market access in oncology and specialty therapeutics.
         </p>
         <p>
           In my personal life, I enjoy learning about theater arts and science,
